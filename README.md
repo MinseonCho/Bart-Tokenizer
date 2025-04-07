@@ -23,7 +23,3 @@ ONNX 포맷의 `DistilBART` 모델을 사용해 **텍스트 요약 기능을 And
 - Transformer 모델의 Encoder/Decoder 구조
 - ONNX Runtime을 통한 모델 추론 처리
 - Android On-Device 요약 시도
-
-## 📷 스크린샷
-> 입력 문장 → 요약 결과
-<img src="screenshot.jpeg" alt="요약 결과 화면" width="200"/>
