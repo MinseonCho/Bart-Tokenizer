@@ -26,4 +26,4 @@ ONNX 포맷의 `DistilBART` 모델을 사용해 **텍스트 요약 기능을 And
 
 ## 📷 스크린샷
 > 입력 문장 → 요약 결과
-![미디어](https://github.com/user-attachments/assets/36511c0b-c35b-40ca-a37e-4c767cb757df)
+<img src="screenshot.jpeg" alt="요약 결과 화면" width="200"/>
