@@ -73,7 +73,7 @@ private fun MainScreen(
     tokenizer: BartTokenizer,
     modifier: Modifier = Modifier,
 ) {
-    var inputText by remember { mutableStateOf(TestData.text1) }
+    var inputText by remember { mutableStateOf(TestData.text6) }
     var isProgressBarVisible by remember { mutableStateOf(false) }
     var isDialogVisible by remember { mutableStateOf(false) }
     var originalText by remember { mutableStateOf("") }
@@ -99,7 +99,6 @@ private fun MainScreen(
                 Spacer(modifier = Modifier.height(16.dp))
                 Button(
                     onClick = {
-                        bart(tokenizer)
                         isProgressBarVisible = true
                         originalText = inputText
 
@@ -328,6 +327,7 @@ private fun flattenHiddenStates(encoderOutput: Array<Array<FloatArray>>): FloatB
     return flatBuffer
 }
 
+// 토크나이저 테스트 용
 fun bart(tokenizer: BartTokenizer) {
     val tokens = tokenizer.tokenize(
         "Unmaintainable codebases often lead to technical debt accumulation.😵"
